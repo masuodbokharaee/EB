@@ -2,6 +2,9 @@
 body,
 input, select, textarea {
 	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    direction: rtl;
+    text-align: right;
+
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -53,26 +56,59 @@ body {
 
 .menu{
 
-    width:150px;
+    width:100px;
     float:right;
     padding:5px;
     margin:10px;
     height:150px;
     direction: rtl;
+    text-align: center;
+
 }
+
+.menu a.home1{
+    background-image: url(../images/skin/house.png);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.menu a.home2{
+    background-image: url(../images/skin/database_edit.png);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.menu a.home3{
+    background-image: url(../images/skin/exclamation.png);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.menu a.home4{
+    background-image: url(../images/skin/information.png);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.menu a.home5{
+    background-image: url(../images/skin/database_save.png);
+    background-repeat: no-repeat;
+    background-position: right;
+
+}
+
 .menu li {
     position:relative;
 }
 
 .menu a {
     overflow:hidden;
-    width:60%;
+    width:65%;
     text-decoration:none;
     display:block;
     height:30px;
-    vertical-align: middle;
-    padding-right:25px;
-
+    padding-right:15px;
+    direction: rtl;
 }
 
 .menu li a:hover {
@@ -172,6 +208,7 @@ img {
 	-webkit-box-shadow: 0 0 3px 1px #aaaaaa;
 	        box-shadow: 0 0 3px 1px #aaaaaa;
 	zoom: 1;
+    direction: rtl;
 }
 
 .nav ul {
@@ -182,7 +219,7 @@ img {
 
 .nav li {
 	display: block;
-	float: left;
+	float: right;
 	list-style-type: none;
 	margin-right: 0.5em;
 	padding: 0;

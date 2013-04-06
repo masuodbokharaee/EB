@@ -20,16 +20,15 @@
 	<body>
 		<div id="grailsLogo" role="banner"><img src="${resource(dir: 'images', file: '12.png')}" alt="Grails"/></div>
     <div class="menu">
-        <div>
 
-            <ul>
-                <li><a href="">home</a></li>
-                <li><a href="">home2</a></li>
-                <li><a href="">home3</a></li>
-                <li><a href="">home4</a></li>
-                <li><a href="">home5</a></li>
+            <ul >
+                <li ><a class="home1" href="">home</a></li>
+                <li><a class="home2" href="">home2</a></li>
+                <li><a class="home3" href="">home3</a></li>
+                <li><a class="home4" href="">home4</a></li>
+                <li><a class="home5" href="">home5</a></li>
             </ul>
-        </div>
+
     </div>
     <g:layoutBody/>
 
