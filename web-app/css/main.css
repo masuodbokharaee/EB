@@ -48,14 +48,44 @@ body {
 }
 
 #grailsLogo {
-	background-color: #abbf78;
+    direction: rtl;
+}
+
+.menu{
+
+    width:150px;
+    float:right;
+    padding:5px;
+    margin:10px;
+    height:150px;
+    direction: rtl;
+}
+.menu li {
+    position:relative;
+}
+
+.menu a {
+    overflow:hidden;
+    width:60%;
+    text-decoration:none;
+    display:block;
+    height:30px;
+    vertical-align: middle;
+    padding-right:25px;
+
+}
+
+.menu li a:hover {
+    background-color: #0f008c;
+    color: #fbfffd;
+    font-weight: bold;
 }
 
 /* replace with .no-boxshadow body if you have modernizr available */
 .ie6 body,
 .ie7 body,
 .ie8 body {
-	border-color: #255b17;
+	border-color: #000000;
 	border-style: solid;
 	border-width: 0 1px;
 }
@@ -65,7 +95,7 @@ body {
 }
 
 a:link, a:visited, a:hover {
-	color: #48802c;
+	color: #000000;
 }
 
 a:hover, a:active {
@@ -73,7 +103,7 @@ a:hover, a:active {
 }
 
 h1 {
-	color: #48802c;
+	color: #000000;
 	font-weight: normal;
 	font-size: 1.25em;
 	margin: 0.8em 0 0.3em 0;
@@ -108,13 +138,14 @@ img {
 }
 
 .footer {
-	background: #abbf78;
+	background: #8997a6;
 	color: #000;
 	clear: both;
 	font-size: 0.8em;
 	margin-top: 1.5em;
 	padding: 1em;
 	min-height: 1em;
+    direction: rtl;
 }
 
 .footer a {
