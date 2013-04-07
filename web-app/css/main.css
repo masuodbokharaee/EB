@@ -56,13 +56,13 @@ body {
 
 .menu{
 
-    width:100px;
+    width:150px;
     float:right;
     padding:5px;
     margin:10px;
     height:150px;
     direction: rtl;
-    text-align: center;
+    text-align: right;
 
 }
 
@@ -103,7 +103,7 @@ body {
 
 .menu a {
     overflow:hidden;
-    width:65%;
+    width:75%;
     text-decoration:none;
     display:block;
     height:30px;
@@ -115,6 +115,8 @@ body {
     background-color: #0f008c;
     color: #fbfffd;
     font-weight: bold;
+   /* background-image: -webkit-gradient( linear, right bottom, left bottom, color-stop(0.06, rgb(137, 151, 166)), color-stop(0.69, rgb(83,187,219)), color-stop(0.84, rgb(55,161,232)) );*/
+    background: url('../images/skin/menupiont1.png')  3% no-repeat ;
 }
 
 /* replace with .no-boxshadow body if you have modernizr available */
