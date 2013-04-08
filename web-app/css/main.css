@@ -103,7 +103,8 @@ body {
     background-size: 20%;
     background-repeat: no-repeat;
     background-position: right;
-
+    position: relative;
+    z-index: 9;
 }
 
 .menu li {
@@ -115,8 +116,9 @@ body {
     width:85%;
     text-decoration:none;
     display:block;
-    height:40px;
+    height:25px;
     padding-right:15px;
+    padding-top: 10px;
     direction: rtl;
     vertical-align: middle;
 }
@@ -167,10 +169,6 @@ img {
 
 /* GENERAL */
 
-#grailsLogo a {
-	display: inline-block;
-	margin: 1em;
-}
 
 .content {
 }
