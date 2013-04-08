@@ -55,43 +55,52 @@ body {
 }
 
 .menu{
-
-    width:150px;
+    background-image: url(../images/backgroundmenu.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width:120px;
     float:right;
-    padding:5px;
-    margin:10px;
-    height:150px;
+    padding:0px;
+    margin-left:10px;
+    margin-right: 5px;
+    height:250px;
     direction: rtl;
-    text-align: right;
-
+    text-align: center;
 }
 
 .menu a.home1{
     background-image: url(../images/skin/house.png);
+    background-size: 20%;
     background-repeat: no-repeat;
     background-position: right;
+
 }
 
 .menu a.home2{
     background-image: url(../images/skin/database_edit.png);
+    background-size: 20%;
     background-repeat: no-repeat;
     background-position: right;
 }
 
 .menu a.home3{
     background-image: url(../images/skin/exclamation.png);
+    background-size: 20%;
     background-repeat: no-repeat;
     background-position: right;
 }
 
 .menu a.home4{
     background-image: url(../images/skin/information.png);
+    background-size: 20%;
     background-repeat: no-repeat;
     background-position: right;
+
 }
 
 .menu a.home5{
     background-image: url(../images/skin/database_save.png);
+    background-size: 20%;
     background-repeat: no-repeat;
     background-position: right;
 
@@ -103,20 +112,21 @@ body {
 
 .menu a {
     overflow:hidden;
-    width:75%;
+    width:85%;
     text-decoration:none;
     display:block;
-    height:30px;
+    height:40px;
     padding-right:15px;
     direction: rtl;
+    vertical-align: middle;
 }
 
+
 .menu li a:hover {
-    background-color: #0f008c;
-    color: #fbfffd;
+    color: #ffffff;
     font-weight: bold;
-   /* background-image: -webkit-gradient( linear, right bottom, left bottom, color-stop(0.06, rgb(137, 151, 166)), color-stop(0.69, rgb(83,187,219)), color-stop(0.84, rgb(55,161,232)) );*/
-    background: url('../images/skin/menupiont1.png')  3% no-repeat ;
+    background: url('../images/skin/menupiont1.png') 1% no-repeat ;
+
 }
 
 /* replace with .no-boxshadow body if you have modernizr available */
