@@ -823,7 +823,7 @@ ol ul {
 }
 
 li {
-  line-height: 20px;
+  line-height: 25px;
 }
 
 ul.unstyled,
@@ -3950,12 +3950,14 @@ input[type="submit"].btn.btn-mini {
 .nav > li > a:hover,
 .nav > li > a:focus {
   text-decoration: none;
-  background-color: #170769;
+  background-color: #a8a8a8;
   font-weight: bold;
 }
 
 .nav > li > a > img {
   max-width: none;
+  float:right;
+  margin-top:5px;
 }
 
 .nav > .pull-right {
@@ -3978,15 +3980,11 @@ input[type="submit"].btn.btn-mini {
 }
 
 .nav-list {
-  padding-right: 15px;
-  padding-left: 15px;
   margin-bottom: 0;
 }
 
 .nav-list > li > a,
 .nav-list .nav-header {
-  margin-right: -15px;
-  margin-left: -15px;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
 }
 

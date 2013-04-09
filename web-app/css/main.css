@@ -80,12 +80,9 @@ body {
     background-image: -webkit-linear-gradient(right, #FFFFFF 0%, #CFCFCF 100%);
     /* W3C Markup, IE10 Release Preview */
     background-image: linear-gradient(to left, #FFFFFF 0%, #CFCFCF 100%);
-    background-size: 100%;
     width:120px;
     float:right;
     padding:0px;
-    margin-left:10px;
-    margin-right: 5px;
     height:250px;
     direction: rtl;
     text-align: center;

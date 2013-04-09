@@ -26,7 +26,7 @@
     <div class="menu" >
 
         <ul class="nav nav-list">
-                <li class="" ><a class="home1" href=""><img class="img-circle" src="${resource(dir: 'images/skin', file: 'house.png')}"/>home</a></li>
+                <li class="" ><a class="home1" href=""><img src="${resource(dir: 'images/skin', file: 'house.png')}"/>home</a></li>
                 <li class=""><a class="home2" href="">home2</a></li>
                 <li class=""><a class="home3" href="">home3</a></li>
                 <li class=""><a class="home4" href="">home4</a></li>
