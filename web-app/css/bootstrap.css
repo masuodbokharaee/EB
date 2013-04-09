@@ -6155,3 +6155,7 @@ a.badge:focus {
 .affix {
   position: fixed;
 }
+
+.test {
+    text-align:right;
+}
