@@ -22,10 +22,10 @@
 	<body>
 
 		<div id="grailsLogo" role="banner"><img src="${resource(dir: 'images', file: '12.png')}"/></div>
-    <div class="menu" id="act">
+    <div class="menu" >
 
-            <ul >
-                <li class="active"><a class="home1" href="">home</a></li>
+            <ul id="act">
+                <li class="" ><a class="home1" href="">home</a></li>
                 <li class=""><a class="home2" href="">home2</a></li>
                 <li class=""><a class="home3" href="">home3</a></li>
                 <li class=""><a class="home4" href="">home4</a></li>
@@ -41,10 +41,10 @@
 		<g:javascript library="application"/>
 		<r:layoutResources />
 
-    <script>
+    <script type="text/javascripte" src="bootstrap.js">
         $('#act').click(function (e) {
             e.preventDefault();
-            $(this).tab('show');
+            $(this).tab('active');
         })
 
     </script>
