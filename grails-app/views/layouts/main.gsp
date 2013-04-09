@@ -14,6 +14,7 @@
 		<link rel="apple-touch-icon" sizes="114x114" href="${resource(dir: 'images', file: 'apple-touch-icon-retina.png')}">
 		<link rel="stylesheet" href="${resource(dir: 'css', file: 'main.css')}" type="text/css">
 		<link rel="stylesheet" href="${resource(dir: 'css', file: 'mobile.css')}" type="text/css">
+    <link rel="stylesheet" href="${resource(dir: 'css', file: 'bootstrap.css')}" type="text/css">
         <g:layoutHead/>
 
 		<r:layoutResources />
@@ -21,11 +22,11 @@
 	</head>
 	<body>
 
-		<div id="grailsLogo" role="banner"><img src="${resource(dir: 'images', file: '12.png')}"/></div>
+		<div id="grailsLogo" role="banner"><img src="${resource(dir: 'images', file: 'logoo.png')}"/></div>
     <div class="menu" >
 
-            <ul id="act">
-                <li class="" ><a class="home1" href="">home</a></li>
+        <ul class="nav nav-list">
+                <li class="" ><a class="home1" href=""><img class="img-circle" src="${resource(dir: 'images/skin', file: 'house.png')}"/>home</a></li>
                 <li class=""><a class="home2" href="">home2</a></li>
                 <li class=""><a class="home3" href="">home3</a></li>
                 <li class=""><a class="home4" href="">home4</a></li>
