@@ -123,13 +123,27 @@ body {
     vertical-align: middle;
 }
 
-
 .menu li a:hover {
+    color: #ffffff;
+    font-weight: bold;
+    background: url('../images/skin/menupiont2.png') 1% no-repeat ;
+
+}
+
+.menu li a:active, a:focus {
     color: #ffffff;
     font-weight: bold;
     background: url('../images/skin/menupiont1.png') 1% no-repeat ;
 
 }
+
+.active  {
+    color: #ffffff;
+    font-weight: bold;
+    background: url('../images/skin/menupiont1.png') 1% no-repeat ;
+}
+
+
 
 /* replace with .no-boxshadow body if you have modernizr available */
 .ie6 body,
