@@ -2282,7 +2282,7 @@ table th[class*="span"],
   *margin-right: .3em;
   line-height: 14px;
   vertical-align: text-top;
-  background-image: url("../img/glyphicons-halflings.png");
+  /*background-image: url("../img/spinner.png");*/
   background-position: 14px 14px;
   background-repeat: no-repeat;
 }
@@ -3939,7 +3939,6 @@ input[type="submit"].btn.btn-mini {
 
 .nav {
   margin-bottom: 20px;
-  margin-left: 0;
   list-style: none;
 }
 
@@ -3987,11 +3986,11 @@ input[type="submit"].btn.btn-mini {
 .nav-list .nav-header {
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
 }
-
+ /*
 .nav-list > li > a {
   padding: 3px 15px;
 }
-
+   */
 .nav-list > .active > a,
 .nav-list > .active > a:hover,
 .nav-list > .active > a:focus {

@@ -27,10 +27,10 @@
 
         <ul class="nav nav-list">
                 <li class="" ><a class="home1" href=""><img src="${resource(dir: 'images/skin', file: 'house.png')}"/>home</a></li>
-                <li class=""><a class="home2" href="">home2</a></li>
-                <li class=""><a class="home3" href="">home3</a></li>
-                <li class=""><a class="home4" href="">home4</a></li>
-                <li class=""><a class="home5" href="">home5</a></li>
+                <li class=""><a class="home2" href=""><img src="${resource(dir: 'images/skin', file: 'database_edit.png')}"/>home2</a></li>
+                <li class=""><a class="home3" href=""><img src="${resource(dir: 'images/skin', file: 'exclamation.png')}"/>home3</a></li>
+                <li class=""><a class="home4" href=""><img src="${resource(dir: 'images/skin', file: 'information.png')}"/>home4</a></li>
+                <li class=""><a class="home5" href=""><img src="${resource(dir: 'images/skin', file: 'database_save.png')}"/>home5</a></li>
             </ul>
 
     </div>

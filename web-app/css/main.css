@@ -43,7 +43,7 @@ body {
 	background: #ffffff;
 	color: #333333;
 	margin: 0 auto;
-	max-width: 960px;
+	/*max-width: 960px;      */
 	overflow-x: hidden; /* prevents box-shadow causing a horizontal scrollbar in firefox when viewport < 960px wide */
 	   -moz-box-shadow: 0 0 0.3em #255b17;
 	-webkit-box-shadow: 0 0 0.3em #255b17;
@@ -86,45 +86,6 @@ body {
     height:250px;
     direction: rtl;
     text-align: center;
-}
- /*
-.menu a.home1{
-    background-image: url(../images/skin/house.png);
-    background-size: 20%;
-    background-repeat: no-repeat;
-    background-position: right;
-
-}
-   */
-.menu a.home2{
-    background-image: url(../images/skin/database_edit.png);
-    background-size: 20%;
-    background-repeat: no-repeat;
-    background-position: right;
-}
-
-.menu a.home3{
-    background-image: url(../images/skin/exclamation.png);
-    background-size: 20%;
-    background-repeat: no-repeat;
-    background-position: right;
-}
-
-.menu a.home4{
-    background-image: url(../images/skin/information.png);
-    background-size: 20%;
-    background-repeat: no-repeat;
-    background-position: right;
-
-}
-
-.menu a.home5{
-    background-image: url(../images/skin/database_save.png);
-    background-size: 20%;
-    background-repeat: no-repeat;
-    background-position: right;
-    position: relative;
-    z-index: 9;
 }
 
 .menu li {
@@ -265,14 +226,13 @@ img {
 	display: block;
 	float: right;
 	list-style-type: none;
-	margin-right: 0.5em;
 	padding: 5px;
 }
 
 .nav a {
 	color: #666666;
 	display: block;
-	padding: 0.25em 0.7em;
+	padding: 0.29em 1.2em;
 	text-decoration: none;
 	   -moz-border-radius: 0.3em;
 	-webkit-border-radius: 0.3em;
