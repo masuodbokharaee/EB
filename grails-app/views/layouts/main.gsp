@@ -16,6 +16,7 @@
 		<link rel="stylesheet" href="${resource(dir: 'css', file: 'mobile.css')}" type="text/css">
     <link rel="stylesheet" href="${resource(dir: 'css', file: 'bootstrap.css')}" type="text/css">
     <script src="${resource(dir: 'js', file: 'jquery.js')}"></script>
+    <g:javascript library="jquery"/>
         <g:layoutHead/>
 
 		<r:layoutResources />
@@ -28,7 +29,7 @@
 
         <ul class="nav nav-list">
                 <li class="s1"><a class="home1" href=""><img src="${resource(dir: 'images/skin', file: 'house.png')}"  width="20px" height="20px" /><g:message code="acc" /></a>
-                <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                <ul class="hide" role="menu" aria-labelledby="dLabel">
                     <li class=""><a class="home1" href="">dep.br</a></li>
                     <li class=""><a class="home1" href="">countdown</a></li>
                     <li class=""><a class="home1" href="">bill</a></li>
@@ -59,9 +60,14 @@
 
 		<r:layoutResources />
 
-    <script type="text/javascript" src="${resource(dir: 'js', file: 'bootstrap.js')}">
+    <script type="text/javascript" src="${resource(dir: 'js', file: 'jquery.js')}">
         $(function() {
-            $('.dropdown-toggle').dropdown()
+            $('.s1').click(function(){
+                if($('.hide').css('display')=='none')
+                    $('.hide').slideDown();
+                else
+                    $('.hide').slideUp();
+            })
         });
         </script>
 	</body>
