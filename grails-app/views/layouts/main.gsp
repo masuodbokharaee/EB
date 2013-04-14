@@ -27,14 +27,14 @@
     <div class="menu dropdown" >
 
         <ul class="nav nav-list">
-                <li class="s1"><a class="home1" href=""><img src="${resource(dir: 'images/skin', file: 'house.png')}"/><g:message code="acc" /></a>
+                <li class="s1"><a class="home1" href=""><img src="${resource(dir: 'images/skin', file: 'house.png')}"  width="20px" height="20px" /><g:message code="acc" /></a>
                 <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
                     <li class=""><a class="home1" href="">dep.br</a></li>
                     <li class=""><a class="home1" href="">countdown</a></li>
                     <li class=""><a class="home1" href="">bill</a></li>
                     <li class=""><a class="home1" href="">history</a></li>
                 </ul></li>
-                <li class=""><a class="home2" href=""><img src="${resource(dir: 'images/skin', file: 'database_edit.png')}"/>trans</a>
+                <li class=""><a class="home2" href=""><img src="${resource(dir: 'images/skin', file: 'database_edit.png')}" width="20px" height="20px" />trans</a>
                     <ul class="hide" style="display: none;">
                         <li class=""><a class="home1" href="">normal</a></li>
                         <li class=""><a class="home1" href="">continuous</a></li>
@@ -42,7 +42,7 @@
                         <li class=""><a class="home1" href="">paya</a></li>
                         <li class=""><a class="home1" href="">satna</a></li>
                     </ul></li>
-                <li class=""><a class="home3" href=""><img src="${resource(dir: 'images/skin', file: 'exclamation.png')}"/>services</a>
+                <li class=""><a class="home3" href=""><img src="${resource(dir: 'images/skin', file: 'exclamation.png')}"  width="20px" height="20px" />services</a>
                     <ul class="hide" style="display: none;">
                         <li class=""><a class="home1" href="">ch.pass</a></li>
                     </ul></li>

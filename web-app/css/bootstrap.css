@@ -3956,7 +3956,7 @@ input[type="submit"].btn.btn-mini {
 .nav > li > a > img {
   max-width: none;
   float:right;
-  margin-top:5px;
+  margin-top:3px;
 }
 
 .nav > .pull-right {
