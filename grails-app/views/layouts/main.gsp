@@ -26,29 +26,25 @@
 
 		<div id="grailsLogo" role="banner"><img src="${resource(dir: 'images', file: 'logoo.png')}"/><span><g:message code="fanavaran.e.ofoghe.aaghah" /></span></div>
     <div class="menu dropdown" >
-
+        <g:set var="menu" value="[account:['accountsSummary','monthlyCalendar','statement','internetTransaction'],fundsTransfer:['internal','schedule','bulk','card','paya','satna'],services:['changePassword']]"/>
         <ul class="nav nav-list">
-                <li class="s1"><a class="home1" href=""><img src="${resource(dir: 'images/skin', file: 'house.png')}"  width="20px" height="20px" /><g:message code="acc" /></a>
-                <ul class="hide" role="menu" aria-labelledby="dLabel">
-                    <li class=""><a class="home1" href="">dep.br</a></li>
-                    <li class=""><a class="home1" href="">countdown</a></li>
-                    <li class=""><a class="home1" href="">bill</a></li>
-                    <li class=""><a class="home1" href="">history</a></li>
-                </ul></li>
-                <li class=""><a class="home2" href=""><img src="${resource(dir: 'images/skin', file: 'database_edit.png')}" width="20px" height="20px" />trans</a>
-                    <ul class="hide" style="display: none;">
-                        <li class=""><a class="home1" href="">normal</a></li>
-                        <li class=""><a class="home1" href="">continuous</a></li>
-                        <li class=""><a class="home1" href="">batch</a></li>
-                        <li class=""><a class="home1" href="">paya</a></li>
-                        <li class=""><a class="home1" href="">satna</a></li>
-                    </ul></li>
-                <li class=""><a class="home3" href=""><img src="${resource(dir: 'images/skin', file: 'exclamation.png')}"  width="20px" height="20px" />services</a>
-                    <ul class="hide" style="display: none;">
-                        <li class=""><a class="home1" href="">ch.pass</a></li>
-                    </ul></li>
+            <g:each in="${menu}" var="menuItem">
+                <g:set var="selectedMenuItemClass" value="${menuItem.key==params.controller?'selected':''}"/>
+                <li class="${selectedMenuItemClass}">
+                    <a class="" href="<g:createLink controller="${menuItem.key}" />">
+                        <img src="${resource(dir: 'images/skin', file: "${menuItem.key}.png")}"  width="20px" height="20px" />
+                        <g:message code="${menuItem.key}" />
+                    </a>
+                    <ul class="hide" role="menu" aria-labelledby="dLabel">
+                        <g:each in="${menuItem.value}" var="menuSubItem">
+                            <g:set var="selectedSubMenuItemClass" value="${menuItem.key==params.controller?'selected':''}"/>
+                            <li class="${selectedSubMenuItemClass}"><a class="" href="<g:createLink controller="${menuItem.key}" action="${menuSubItem}"/>">${menuSubItem}</a></li>
+                        </g:each>
+                    </ul>
+                </li>
 
-            </ul>
+            </g:each>
+        </ul>
 
     </div>
 
