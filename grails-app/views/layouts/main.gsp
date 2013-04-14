@@ -15,6 +15,7 @@
 		<link rel="stylesheet" href="${resource(dir: 'css', file: 'main.css')}" type="text/css">
 		<link rel="stylesheet" href="${resource(dir: 'css', file: 'mobile.css')}" type="text/css">
     <link rel="stylesheet" href="${resource(dir: 'css', file: 'bootstrap.css')}" type="text/css">
+    <script src="${resource(dir: 'js', file: 'jquery.js')}"></script>
         <g:layoutHead/>
 
 		<r:layoutResources />
@@ -22,15 +23,30 @@
 	</head>
 	<body>
 
-		<div id="grailsLogo" role="banner"><img src="${resource(dir: 'images', file: 'logoo.png')}"/></div>
-    <div class="menu" >
+		<div id="grailsLogo" role="banner"><img src="${resource(dir: 'images', file: 'logoo.png')}"/><span><g:message code="fanavaran.e.ofoghe.aaghah" /></span></div>
+    <div class="menu dropdown" >
 
         <ul class="nav nav-list">
-                <li class="" ><a class="home1" href=""><img src="${resource(dir: 'images/skin', file: 'house.png')}"/>home</a></li>
-                <li class=""><a class="home2" href=""><img src="${resource(dir: 'images/skin', file: 'database_edit.png')}"/>home2</a></li>
-                <li class=""><a class="home3" href=""><img src="${resource(dir: 'images/skin', file: 'exclamation.png')}"/>home3</a></li>
-                <li class=""><a class="home4" href=""><img src="${resource(dir: 'images/skin', file: 'information.png')}"/>home4</a></li>
-                <li class=""><a class="home5" href=""><img src="${resource(dir: 'images/skin', file: 'database_save.png')}"/>home5</a></li>
+                <li class="s1"><a class="home1" href=""><img src="${resource(dir: 'images/skin', file: 'house.png')}"/><g:message code="account" /></a>
+                <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                    <li class=""><a class="home1" href="">seporde ha dar yek negah</a></li>
+                    <li class=""><a class="home1" href="">rooz shomar e mali</a></li>
+                    <li class=""><a class="home1" href="">soorathesab</a></li>
+                    <li class=""><a class="home1" href="">savabegh tarakonesh haye interneti</a></li>
+                </ul></li>
+                <li class=""><a class="home2" href=""><img src="${resource(dir: 'images/skin', file: 'database_edit.png')}"/>enteghal e vajh</a>
+                    <ul class="hide" style="display: none;">
+                        <li class=""><a class="home1" href="">aadi</a></li>
+                        <li class=""><a class="home1" href="">mostamar</a></li>
+                        <li class=""><a class="home1" href="">dasteyee</a></li>
+                        <li class=""><a class="home1" href="">beyne banki paya</a></li>
+                        <li class=""><a class="home1" href="">beyne banki satna</a></li>
+                    </ul></li>
+                <li class=""><a class="home3" href=""><img src="${resource(dir: 'images/skin', file: 'exclamation.png')}"/>servis haa</a>
+                    <ul class="hide" style="display: none;">
+                        <li class=""><a class="home1" href="">taghire kalame oboor</a></li>
+                    </ul></li>
+
             </ul>
 
     </div>
@@ -40,14 +56,13 @@
 		<div class="footer" role="contentinfo"></div>
 		<div id="spinner" class="spinner" style="display:none;"><g:message code="spinner.alt" default="Loading&hellip;"/></div>
 		<g:javascript library="application"/>
+
 		<r:layoutResources />
 
-    <script type="text/javascripte" src="bootstrap.js">
-        $('#act').click(function (e) {
-            e.preventDefault();
-            $(this).tab('active');
-        })
-
-    </script>
+    <script type="text/javascript" src="${resource(dir: 'js', file: 'bootstrap.js')}">
+        $(function() {
+            $('.dropdown-toggle').dropdown()
+        });
+        </script>
 	</body>
 </html>
