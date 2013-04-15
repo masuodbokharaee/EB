@@ -67,6 +67,12 @@ body {
     padding-right: 30px;
 }
 
+#tlogo{
+    color: #1219b6;
+    font-weight: bold;
+    font-size: 30px;
+}
+
 .menu{
     /* IE10 Consumer Preview */
     background-image: -ms-radial-gradient(left center, circle closest-corner, #949494 0%, #FFFFFF 80%);
@@ -251,17 +257,17 @@ img {
 .nav a {
 	color: #666666;
 	display: block;
-	padding: 0.29em 1.2em;
+	padding: 0.29em 0.5em;
 	text-decoration: none;
 	   -moz-border-radius: 0.3em;
 	-webkit-border-radius: 0.3em;
 	        border-radius: 0.3em;
 }
-
+/*
 .nav a:active, .nav a:visited {
 	color: #666666;
 }
-
+  */
 .nav a:focus, .nav a:hover {
 	background-color: #999999;
 	color: #ffffff;
