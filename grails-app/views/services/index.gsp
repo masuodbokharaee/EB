@@ -4,6 +4,6 @@
   <meta name="layout" content="main"/>
 </head>
 <body>
-    services index
+    <g:message code="services.index" />
 </body>
 </html>

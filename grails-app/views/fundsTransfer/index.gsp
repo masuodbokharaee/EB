@@ -4,6 +4,6 @@
     <meta name="layout" content="main"/>
 </head>
 <body>
-transfer index
+<g:message code="transfer.index" />
 </body>
 </html>

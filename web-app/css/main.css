@@ -123,7 +123,7 @@ body {
 .menu li.selected {
     color: #ffffff;
     font-weight: bold;
-    background: url('../images/skin/menupiont1.png') 1% no-repeat ;
+    background: url('../images/skin/menupiont1.png') 3% no-repeat ;
 
 }
 
