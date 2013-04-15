@@ -4,6 +4,6 @@
     <meta name="layout" content="main"/>
 </head>
 <body>
-transfer bulk
+<g:message code="transfer.bulk" />
 </body>
 </html>

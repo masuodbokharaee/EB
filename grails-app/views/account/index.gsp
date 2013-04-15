@@ -4,6 +4,6 @@
     <meta name="layout" content="main"/>
 </head>
 <body>
-accounts index
+<g:message code="accounts.index" />
 </body>
 </html>

@@ -4,6 +4,6 @@
     <meta name="layout" content="main"/>
 </head>
 <body>
-satna
+<g:message code="satna" />
 </body>
 </html>

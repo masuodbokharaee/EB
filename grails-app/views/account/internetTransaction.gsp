@@ -4,6 +4,5 @@
     <meta name="layout" content="main"/>
 </head>
 <body>
-internet transaction
-</body>
+<g:message code="internet.transaction" /></body>
 </html>

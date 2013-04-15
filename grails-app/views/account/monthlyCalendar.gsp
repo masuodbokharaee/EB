@@ -4,6 +4,6 @@
     <meta name="layout" content="main"/>
 </head>
 <body>
-monthly calendar
+<g:message code="monthly.calendar" />
 </body>
 </html>

@@ -27,7 +27,7 @@
 		<div id="grailsLogo" role="banner"><img src="${resource(dir: 'images', file: 'logoo.png')}"/><span id="tlogo"><g:message code="fanavaran.e.ofoghe.aaghah" /></span></div>
     <div class="menu dropdown" >
         <g:set var="menu" value="[account:['accountsSummary','monthlyCalendar','statement','internetTransaction'],fundsTransfer:['internal','schedule','bulk','card','paya','satna'],services:['changePassword']]"/>
-        <ul class="nav">
+        <ul class="nav ">
             <g:each in="${menu}" var="menuItem">
                 <g:set var="selectedMenuItemClass" value="${menuItem.key==params.controller?'selected':''}"/>
                 <li class="${selectedMenuItemClass}">
@@ -35,10 +35,10 @@
                         <img src="${resource(dir: 'images/skin', file: "${menuItem.key}.png")}"  width="20px" height="20px" />
                         <g:message code="${menuItem.key}" />
                     </a>
-                    <ul class="hide dropdown-toggle" role="menu" aria-labelledby="dLabel">
+                    <ul class="show" role="menu" aria-labelledby="dLabel">
                         <g:each in="${menuItem.value}" var="menuSubItem">
                             <g:set var="selectedSubMenuItemClass" value="${menuItem.key==params.controller?'selected':''}"/>
-                            <li tabindex="-1" class="${selectedSubMenuItemClass} "><a class="" href="<g:createLink controller="${menuItem.key}" action="${menuSubItem}"/>">${menuSubItem}</a></li>
+                            <li tabindex="-1" class="${selectedSubMenuItemClass} "><a class="" href="<g:createLink controller="${menuItem.key}" action="${menuSubItem}"/>"><g:message code="${menuSubItem}"/></a></li>
                         </g:each>
                     </ul>
                 </li>

@@ -4,6 +4,6 @@
     <meta name="layout" content="main"/>
 </head>
 <body>
-statement
+<g:message code="statement" />
 </body>
 </html>

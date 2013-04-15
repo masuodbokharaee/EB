@@ -4,6 +4,6 @@
     <meta name="layout" content="main"/>
 </head>
 <body>
-transfer card
+<g:message code="transfer.card" />
 </body>
 </html>

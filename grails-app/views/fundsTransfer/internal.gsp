@@ -4,6 +4,6 @@
     <meta name="layout" content="main"/>
 </head>
 <body>
-transfer internal
+<g:message code="transfer.internal" />
 </body>
 </html>

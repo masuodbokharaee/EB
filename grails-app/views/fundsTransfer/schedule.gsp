@@ -4,6 +4,6 @@
     <meta name="layout" content="main"/>
 </head>
 <body>
-transfer scheduled
+<g:message code="transfer.scheduled" />
 </body>
 </html>

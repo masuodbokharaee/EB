@@ -4,6 +4,6 @@
     <meta name="layout" content="main"/>
 </head>
 <body>
-paya
+<g:message code="paya" />
 </body>
 </html>

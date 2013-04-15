@@ -4,6 +4,6 @@
     <meta name="layout" content="main"/>
 </head>
 <body>
-changePassword index
+<g:message code="changepassword.index" />
 </body>
 </html>
