@@ -4,6 +4,9 @@
     <meta name="layout" content="main"/>
 </head>
 <body>
+<div class="text-head">
 <g:message code="transfer.bulk" />
+<p class="linehead"></p>
+</div>
 </body>
 </html>

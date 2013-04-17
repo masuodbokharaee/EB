@@ -4,8 +4,9 @@
     <meta name="layout" content="main"/>
 </head>
 <body>
-<div class="text-right">
+<div class="text-head">
     <g:message code="acct.summary" />
+    <p class="linehead"></p>
 </div>
 
 </body>

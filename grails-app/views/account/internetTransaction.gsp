@@ -4,5 +4,9 @@
     <meta name="layout" content="main"/>
 </head>
 <body>
-<g:message code="internet.transaction" /></body>
+<div class="text-head">
+<g:message code="internet.transaction" />
+    <p class="linehead"></p>
+</div>
+</body>
 </html>
