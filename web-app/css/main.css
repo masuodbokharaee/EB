@@ -124,9 +124,13 @@ body {
     color: #ffffff;
     font-weight: bold;
     background: url('../images/skin/menupiont1.png') 3% no-repeat ;
-
+    background-position:top;
 }
-
+.menu li.selectedsubmenu {
+    color: #ffffff;
+    font-weight: bold;
+    background-color:gray ;
+}
 .active  {
     color: #ffffff;
     font-weight: bold;
@@ -688,4 +692,7 @@ th:hover, tr:hover {
 a.skip {
 	position: absolute;
 	left: -9999px;
+}
+.hidden{
+	display:none;
 }
