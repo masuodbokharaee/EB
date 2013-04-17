@@ -36,10 +36,10 @@
                         <g:message code="${menuItem.key}" />
                     </a>
                     <g:set var="showSubMenuItemClass" value="${menuItem.key==params.controller?'show':'hidden'}"/>
-                    <ul class="${showSubMenuItemClass}" role="menu">
+                    <ul class="${showSubMenuItemClass} ctg" role="menu">
                         <g:each in="${menuItem.value}" var="menuSubItem">
                             <g:set var="selectedSubMenuItemClass" value="${menuSubItem==params.action?'selectedsubmenu':''}"/>
-                            <li class="${selectedSubMenuItemClass} "><a class="" href="<g:createLink controller="${menuItem.key}" action="${menuSubItem}"/>"><g:message code="${menuSubItem}"/></a></li>
+                            <li class="${selectedSubMenuItemClass}"><a class="" href="<g:createLink controller="${menuItem.key}" action="${menuSubItem}"/>"><g:message code="${menuSubItem}"/></a></li>
                         </g:each>
                     </ul>
                 </li>

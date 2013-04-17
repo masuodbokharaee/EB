@@ -162,6 +162,10 @@ body {
     border-bottom: 1px solid #ffffff;
 }
 
+.ctg {
+    color: #2c5f00;
+}
+
 /* replace with .no-boxshadow body if you have modernizr available */
 .ie6 body,
 .ie7 body,
