@@ -127,6 +127,10 @@ body {
 
 }
 
+.menu ul.show{
+    display: show;
+}
+
 .active  {
     color: #ffffff;
     font-weight: bold;
