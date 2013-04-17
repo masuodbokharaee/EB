@@ -126,14 +126,14 @@ body {
    */
 .menu li.selected {
     color: #ffffff;
-    font-weight: bold;
+    font-weight: bolder;
     background: url('../images/skin/menupiont1.png') 1% no-repeat ;
     background-position:top;
 }
 .menu li.selectedsubmenu {
     color: #ff0023;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.80);
-    font-weight: bold;
+    font-weight: bolder;
     background-color:gray ;
     background:url('../images/skin/tik.png') 1% no-repeat ;
 
