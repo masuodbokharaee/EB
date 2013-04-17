@@ -1,10 +1,10 @@
 /* FONT STACK */
 body,
 input, select, textarea {
-	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-family: "tahoma", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     direction: rtl;
     text-align: right;
-
+    font-size: 11px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -65,12 +65,15 @@ body {
     /* W3C Markup, IE10 Release Preview */
     background-image: linear-gradient(to bottom, #FFFFFF 0%, #9E9E9E 300%);
     padding-right: 30px;
+    height: 60px;
 }
 
 #tlogo{
-    color: #1219b6;
+    color: #0e1489;
     font-weight: bold;
     font-size: 30px;
+    font-family: tahoma;
+    padding: 55px;
 }
 
 .menu{
@@ -86,9 +89,11 @@ body {
     background-image: -webkit-radial-gradient(left center, circle closest-corner, #949494 0%, #FFFFFF 80%);
     /* W3C Markup, IE10 Release Preview */
     background-image: radial-gradient(circle closest-corner at left center, #949494 0%, #FFFFFF 80%);
+    background-origin: padding;
     width:150px;
     float:right;
     padding-top:40px;
+    padding-bottom: 40px;
     height:100%;
     direction: rtl;
     text-align: center;
@@ -103,7 +108,6 @@ body {
 
 .menu a {
     overflow:hidden;
-    width:85%;
     text-decoration:none;
     display:block;
     height:25px;
@@ -123,13 +127,17 @@ body {
 .menu li.selected {
     color: #ffffff;
     font-weight: bold;
-    background: url('../images/skin/menupiont1.png') 3% no-repeat ;
+    background: url('../images/skin/menupiont1.png') 1% no-repeat ;
     background-position:top;
 }
 .menu li.selectedsubmenu {
-    color: #ffffff;
+    color: #ff0023;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.80);
     font-weight: bold;
     background-color:gray ;
+    background:url('../images/skin/tik.png') 1% no-repeat ;
+    display: inline-block;
+    text-align: right;
 }
 .active  {
     color: #ffffff;
@@ -249,18 +257,18 @@ img {
 .nav li {
 	display: block;
 	list-style-type: none;
-	padding: 5px;
+/*	padding-right: 5px;    */
     text-align: right;
 }
 
 .nav a {
 	color: #000000;
 	display: block;
-	padding: 0.29em 0.5em;
+	padding: 0.29em 0.7em;
 	text-decoration: none;
-	   -moz-border-radius: 4.3em;
+	/*   -moz-border-radius: 4.3em;
 	-webkit-border-radius: 4.3em;
-	        border-radius: 4.3em;
+	        border-radius: 4.3em;*/
     text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.50);
 }
 /*
@@ -269,7 +277,7 @@ img {
 }
   */
 .nav a:focus, .nav a:hover {
-	background-color: rgba(170, 170, 170, 0.75);
+	background-color: #7186e4;
 	color: #ffffff;
 	outline: none;
 	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
