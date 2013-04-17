@@ -35,10 +35,11 @@
                         <img src="${resource(dir: 'images/skin', file: "${menuItem.key}.png")}"  width="20px" height="20px" />
                         <g:message code="${menuItem.key}" />
                     </a>
-                    <ul class="hide" role="menu" aria-labelledby="dLabel">
+                    <g:set var="showSubMenuItemClass" value="${menuItem.key==params.action?'show':''}"/>
+                    <ul class="${showSubMenuItemClass}" role="menu">
                         <g:each in="${menuItem.value}" var="menuSubItem">
                             <g:set var="selectedSubMenuItemClass" value="${menuItem.key==params.controller?'selected':''}"/>
-                            <li tabindex="-1" class="${selectedSubMenuItemClass} "><a class="" href="<g:createLink controller="${menuItem.key}" action="${menuSubItem}"/>"><g:message code="${menuSubItem}"/></a></li>
+                            <li class="${selectedSubMenuItemClass} "><a class="" href="<g:createLink controller="${menuItem.key}" action="${menuSubItem}"/>"><g:message code="${menuSubItem}"/></a></li>
                         </g:each>
                     </ul>
                 </li>
