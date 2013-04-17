@@ -134,7 +134,6 @@ body {
     color: #ff0023;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.80);
     font-weight: bolder;
-    background-color:gray ;
     background:url('../images/skin/tik.png') 95% no-repeat;
     background-size: 9%;
 }
@@ -165,6 +164,7 @@ body {
 .ctg {
     color: #2c5f00;
 }
+
 
 /* replace with .no-boxshadow body if you have modernizr available */
 .ie6 body,
