@@ -130,6 +130,9 @@ body {
     background: url('../images/skin/menupiont1.png') 1% no-repeat ;
     background-position:top;
 }
+.menu li.selected >  a{
+    color: #ffffff;
+}
 .menu li.selectedsubmenu {
     color: #ff0023;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.80);
@@ -137,6 +140,11 @@ body {
     background:url('../images/skin/tik.png') 95% no-repeat;
     background-size: 9%;
 }
+
+.menu li.selectedsubmenu >  a{
+    color: #dd001f;
+}
+
 .active  {
     color: #ffffff;
     font-weight: bold;
