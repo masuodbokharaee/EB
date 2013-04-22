@@ -32,7 +32,7 @@
                 <g:set var="selectedMenuItemClass" value="${menuItem.key==params.controller?'selected':''}"/>
                 <li class="${selectedMenuItemClass}">
                     <a class="" href="<g:createLink controller="${menuItem.key}" />">
-                        <img src="${resource(dir: 'images/skin', file: "${menuItem.key}.png")}"  width="25px" height="25px" />
+                        <img src="${resource(dir: 'images/skin', file: "${menuItem.key}.png")}"  width="22px" height="22px" />
                         <g:message code="${menuItem.key}" />
                     </a>
                     <g:set var="showSubMenuItemClass" value="${menuItem.key==params.controller?'show':'hidden'}"/>
