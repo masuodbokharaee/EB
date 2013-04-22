@@ -102,7 +102,7 @@ img {
   width: auto\9;
   height: auto;
   max-width: 100%;
-  vertical-align: middle;
+  vertical-align: bottom;
   border: 0;
   -ms-interpolation-mode: bicubic;
 }
@@ -3956,7 +3956,7 @@ input[type="submit"].btn.btn-mini {
 .nav > li > a > img {
   max-width: none;
   float:right;
-  margin-top:3px;
+  margin-top:1px;
 }
 
 .nav > .pull-right {
@@ -3984,7 +3984,7 @@ input[type="submit"].btn.btn-mini {
 
 .nav-list > li > a,
 .nav-list .nav-header {
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+    text-shadow: 0 1px 0 rgba(107, 107, 107, 0.45);
 }
  /*
 .nav-list > li > a {

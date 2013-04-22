@@ -64,32 +64,23 @@ body {
     background-image: -webkit-linear-gradient(top, #FFFFFF 0%, #9E9E9E 300%);
     /* W3C Markup, IE10 Release Preview */
     background-image: linear-gradient(to bottom, #FFFFFF 0%, #9E9E9E 300%);
-    padding-right: 30px;
+    padding-right: 20px;
+    padding-top: 10px;
     height: 60px;
 }
 
 #tlogo{
     color: #0e1489;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 20px;
     font-family: tahoma;
-    padding: 55px;
+    padding: 10px;
 }
 
 .menu{
-    /* IE10 Consumer Preview */
-    background-image: -ms-radial-gradient(left center, circle closest-corner, #949494 0%, #FFFFFF 80%);
-    /* Mozilla Firefox */
-    background-image: -moz-radial-gradient(left center, circle closest-corner, #949494 0%, #FFFFFF 80%);
-    /* Opera */
-    background-image: -o-radial-gradient(left center, circle closest-corner, #949494 0%, #FFFFFF 80%);
-    /* Webkit (Safari/Chrome 10) */
-    background-image: -webkit-gradient(radial, left center, 0, left center, 140, color-stop(0, #949494), color-stop(0.8, #FFFFFF));
-    /* Webkit (Chrome 11+) */
-    background-image: -webkit-radial-gradient(left center, circle closest-corner, #949494 0%, #FFFFFF 80%);
-    /* W3C Markup, IE10 Release Preview */
-    background-image: radial-gradient(circle closest-corner at left center, #949494 0%, #FFFFFF 80%);
-    background-origin: padding;
+    background-image: url("../images/navBg-rtl.png") ;
+    background-repeat: no-repeat;
+    background-size: 70%;
     width:150px;
     float:right;
     padding-top:40px;
@@ -126,8 +117,7 @@ body {
    */
 .menu li.selected {
     color: #ffffff;
-    font-weight: bolder;
-    background: url('../images/skin/menupiont1.png') 1% no-repeat ;
+    background: url('../images/skin/menuItemBg_rtl.png') 1% no-repeat ;
     background-size: 122%;
     background-position:top;
 }
@@ -136,8 +126,8 @@ body {
 }
 .menu li.selectedsubmenu {
     color: #57bb00;
+    /*font-weight: bolder;   */
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.80);
-    font-weight: bolder;
     background:url('../images/skin/tik.png') 95% no-repeat;
     background-size: 9%;
 }
@@ -146,17 +136,18 @@ body {
     padding: 0;
 }
 .menu li.selectedsubmenu >  a{
-    color: #dd001f;
+   /* color: #dd001f; */
+    font-weight: bolder;
 }
 .ctg {
     color: #2c5f00;
-}
+} /*
 .active  {
     color: #ffffff;
     font-weight: bold;
     background: url('../images/skin/menupiont1.png') -1% no-repeat 50px;
 }
-
+      */
 .text-head {
     font-size:17px;
     font-weight: bold;

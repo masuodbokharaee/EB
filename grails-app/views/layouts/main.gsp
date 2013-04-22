@@ -24,7 +24,7 @@
 	</head>
 	<body>
 
-		<div id="grailsLogo" role="banner"><span id="tlogo"><g:message code="fanavaran.e.ofoghe.aaghah" /></span></div>
+		<div id="grailsLogo" role="banner"><img src="${resource(dir: 'images', file: "agah_72.png")}" width="50px" height="50px"/><span id="tlogo"><g:message code="fanavaran.e.ofoghe.aaghah" /></span></div>
     <div class="menu" >
         <g:set var="menu" value="[account:['accountsSummary','monthlyCalendar','statement','internetTransaction'],fundsTransfer:['internal','schedule','bulk','card','paya','satna'],services:['changePassword']]"/>
         <ul class="nav nav-list">
