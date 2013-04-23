@@ -65,23 +65,31 @@ body {
     /* W3C Markup, IE10 Release Preview */
     background-image: linear-gradient(to bottom, #FFFFFF 0%, #9E9E9E 300%);
     padding-right: 20px;
-    padding-top: 10px;
+    padding-top: 5px;
     height: 60px;
 }
 
 #tlogo{
-    color: #0e1489;
+    color: #3035a1;
     font-weight: bold;
     font-size: 20px;
     font-family: tahoma;
     padding: 10px;
 }
 
+.leftop{
+    color: blue;
+    direction: ltr;
+    float: left;
+    margin-left: 10px;
+    text-align: center;
+    margin-top: 2px;
+    font-size: 10px;
+}
+
 .menu{
-    background-image: url("../images/navBg-rtl.png") ;
-    background-repeat: no-repeat;
-    background-size: 70%;
-    width:150px;
+    background: url("../images/navBg-rtl.png") no-repeat scroll center top / 90% auto transparent ;
+    width:170px;
     float:right;
     padding-top:40px;
     padding-bottom: 40px;
@@ -101,10 +109,11 @@ body {
     text-decoration:none;
     display:block;
     height:25px;
-    padding-right:15px;
-    padding-top: 10px;
+    padding-right:5px;
+    padding-top: 1px;
     direction: rtl;
     vertical-align: middle;
+    width: 150px;
 }
  /*
 .menu li a:hover {
@@ -115,32 +124,69 @@ body {
 }
    */
 .menu li.selected {
-    color: #ffffff;
-    background: url('../images/skin/menuItemBg_rtl.png') 1% no-repeat ;
-    background-size: 122%;
-    background-position:top;
+    background: url("../images/skin/menuItemBg_rtl.png") no-repeat scroll left top / 100% auto transparent ;
+
 }
 .menu li.selected >  a{
     color: #ffffff;
 }
 .menu li.selectedsubmenu {
-    color: #57bb00;
+    color: #2c5f00;
     /*font-weight: bolder;   */
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.80);
     background:url('../images/skin/tik.png') 95% no-repeat;
     background-size: 9%;
 }
 
-.menu li.submenu {
+.menu li.showsubmenu > a {
     padding: 0;
+    coloe:green;
 }
+
 .menu li.selectedsubmenu >  a{
-   /* color: #dd001f; */
+ /*   color: #dd001f; */
     font-weight: bolder;
 }
 .ctg {
     color: #2c5f00;
-} /*
+    padding-right: 20px;
+}
+.linemenu {
+    height: 1px;
+    margin: 0;
+     width: 155px;
+    overflow: hidden;
+    background-color: rgba(129, 126, 126, 0.24);
+    border-bottom: 1px solid #ffffff;
+}
+
+.lineheadmenu {
+    background-color: rgba(143, 143, 143, 0.81);
+    border-bottom: 1px solid #FFFFFF;
+    float: left;
+    height: 10px;
+    margin-right: 7px;
+    margin-top: 3px;
+    overflow: hidden;
+    width: 1px;;
+}
+.lineheadbot {
+    display:block;
+    border:none;
+    color:white;
+    height:1px;
+    background:black;
+    background-color: rgb(156, 156, 156);
+    margin-top:9px;
+  /*  background-color: rgb(156, 156, 156);
+    border-bottom: 1px solid #FFFFFF;
+    float: inherit;
+    height: 1px;
+    margin: 10px;
+    overflow: hidden;
+    width: 125% */
+}
+/*
 .active  {
     color: #ffffff;
     font-weight: bold;
@@ -156,13 +202,17 @@ body {
 }
 
 .linehead {
-    *width: 100%;
+    margin: 10px 0;
+    width: 70%;
+    border: 0;
     height: 1px;
-    margin: 5px 1px;
-    *margin: -5px 0 5px;
-    overflow: hidden;
-    background-color: #000000;
-    border-bottom: 1px solid #ffffff;
+    background: #333;
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,hsla(0,0%,0%,0)), color-stop(50%,hsla(0,0%,0%,.75)), color-stop(100%,hsla(0,0%,0%,0)));
+    background: -webkit-linear-gradient(left, hsla(0,0%,0%,0) 0%, hsla(0,0%,0%,.75) 50%, hsla(0,0%,0%,0) 100%);
+    background:    -moz-linear-gradient(left, hsla(0,0%,0%,0) 0%, hsla(0,0%,0%,.75) 50%, hsla(0,0%,0%,0) 100%);
+    background:     -ms-linear-gradient(left, hsla(0,0%,0%,0) 0%, hsla(0,0%,0%,.75) 50%, hsla(0,0%,0%,0) 100%);
+    background:      -o-linear-gradient(left, hsla(0,0%,0%,0) 0%, hsla(0,0%,0%,.75) 50%, hsla(0,0%,0%,0) 100%);
+    background:         linear-gradient(left, hsla(0,0%,0%,0) 0%, hsla(0,0%,0%,.75) 50%, hsla(0,0%,0%,0) 100%);
 }
 
 
@@ -180,11 +230,11 @@ body {
 .ie6 body {
 	height: 100%;
 }
-
+  /*
 a:link, a:visited, a:hover {
 	color: #000000;
 }
-
+    */
 a:hover, a:active {
 	outline: none; /* prevents outline in webkit on active links but retains it for tab focus */
 }
@@ -267,14 +317,14 @@ img {
 .nav li {
 	display: block;
 	list-style-type: none;
-/*	padding-right: 5px;    */
+    margin-top: 5px;
     text-align: right;
 }
 
 .nav a {
 	color: #000000;
 	display: block;
-	padding: 0.29em 2em;
+	/*padding: 0.19em 0.5em; */
 	text-decoration: none;
 	/*   -moz-border-radius: 4.3em;
 	-webkit-border-radius: 4.3em;
@@ -287,7 +337,7 @@ img {
 }
   */
 .nav a:focus, .nav a:hover {
-    background-color: rgba(113, 134, 228, 0.47);
+    background-color: rgba(113, 134, 228, 0.47) transparent;
 	color: #ffffff;
 	outline: none;
 	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);

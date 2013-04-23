@@ -24,7 +24,14 @@
 	</head>
 	<body>
 
-		<div id="grailsLogo" role="banner"><img src="${resource(dir: 'images', file: "agah_72.png")}" width="50px" height="50px"/><span id="tlogo"><g:message code="fanavaran.e.ofoghe.aaghah" /></span></div>
+		<div id="grailsLogo" role="banner"><img src="${resource(dir: 'images', file: "agah_72.png")}" width="50px" height="50px"/>
+            <span id="tlogo"><g:message code="fanavaran.e.ofoghe.aaghah" /></span>
+            <img class="leftop" src="${resource(dir: 'images/skin', file: "log1.png")}" width="15px" height="15px"/>
+            <g:link class="leftop"><g:message code="name" /></g:link>
+            <g:link class="leftop"><g:message code="contact" /><span class="lineheadmenu"/></g:link>
+            <g:link class="leftop"><g:message code="setting" /><span class="lineheadmenu"/></g:link>
+            <span class="lineheadbot"/>
+        </div>
     <div class="menu" >
         <g:set var="menu" value="[account:['accountsSummary','monthlyCalendar','statement','internetTransaction'],fundsTransfer:['internal','schedule','bulk','card','paya','satna'],services:['changePassword']]"/>
         <ul class="nav nav-list">
@@ -32,15 +39,16 @@
                 <g:set var="selectedMenuItemClass" value="${menuItem.key==params.controller?'selected':''}"/>
                 <li class="${selectedMenuItemClass}">
                     <a class="" href="<g:createLink controller="${menuItem.key}" />">
-                        <img src="${resource(dir: 'images/skin', file: "${menuItem.key}.png")}"  width="22px" height="22px" />
+                        <img src="${resource(dir: 'images/skin', file: "${menuItem.key}.png")}"  width="27px" height="27px" />
                         <g:message code="${menuItem.key}" />
                     </a>
                     <g:set var="showSubMenuItemClass" value="${menuItem.key==params.controller?'show':'hidden'}"/>
-                    <ul class="${showSubMenuItemClass} ctg" role="menu">
+                    <ul class="${showSubMenuItemClass} " role="menu">
                         <g:each in="${menuItem.value}" var="menuSubItem">
                             <g:set var="selectedSubMenuItemClass" value="${menuSubItem==params.action?'selectedsubmenu':''}"/>
-                            <li class="${selectedSubMenuItemClass}"><a class="" href="<g:createLink controller="${menuItem.key}" action="${menuSubItem}"/>"><g:message code="${menuSubItem}"/></a></li>
+                            <li class="${selectedSubMenuItemClass} ctg"><a class="" href="<g:createLink controller="${menuItem.key}" action="${menuSubItem}"/>"><g:message code="${menuSubItem}"/></a></li>
                         </g:each>
+                    <li class="linemenu"></li>
                     </ul>
                 </li>
 
