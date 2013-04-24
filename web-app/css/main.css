@@ -103,7 +103,7 @@ body {
     margin-top: 1px;
 
 }
-.menu li.selectedsubmenu a{
+.menu .show a{
     display: block;
     padding: 0 26px;
 }
