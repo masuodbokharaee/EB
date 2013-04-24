@@ -106,6 +106,7 @@ body {
 .menu .show a{
     display: block;
     padding: 0 26px;
+    color: #007404;
 }
 
 .menu a {
@@ -117,16 +118,9 @@ body {
     padding-top: 1px;
     direction: rtl;
     vertical-align: middle;
-    width: 150px;
+    width: 155px;
 }
- /*
-.menu li a:hover {
-    color: #ffffff;
-    font-weight: bold;
-    background: url('../images/skin/menupiont2.png') 1% no-repeat ;
 
-}
-   */
 .menu li.selected {
     background: url("../images/skin/menuItemBg_rtl.png") no-repeat scroll left top / 100% auto transparent ;
 
@@ -148,11 +142,8 @@ body {
 }
 
 .menu li.selectedsubmenu >  a{
- /*   color: #dd001f; */
+    color: #dd001f;
     font-weight: bolder;
-}
-.ctg {
-    color: #2c5f00;
 }
 .linemenu {
     height: 1px;
@@ -189,19 +180,13 @@ body {
     overflow: hidden;
     width: 125% */
 }
-/*
-.active  {
-    color: #ffffff;
-    font-weight: bold;
-    background: url('../images/skin/menupiont1.png') -1% no-repeat 50px;
-}
-      */
+
 .text-head {
-    font-size:17px;
+    font-size:16px;
     font-weight: bold;
     color:green;
     padding-right: 180px;
-    padding-top: 30px;
+    padding-top: 12px;
 }
 
 .linehead {

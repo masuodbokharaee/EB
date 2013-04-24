@@ -46,7 +46,7 @@
                     <ul class="${showSubMenuItemClass} " role="menu">
                         <g:each in="${menuItem.value}" var="menuSubItem">
                             <g:set var="selectedSubMenuItemClass" value="${menuSubItem==params.action?'selectedsubmenu':''}"/>
-                            <li class="${selectedSubMenuItemClass} ctg"><a class="" href="<g:createLink controller="${menuItem.key}" action="${menuSubItem}"/>"><g:message code="${menuSubItem}"/></a></li>
+                            <li class="${selectedSubMenuItemClass}"><a class="" href="<g:createLink controller="${menuItem.key}" action="${menuSubItem}"/>"><g:message code="${menuSubItem}"/></a></li>
                         </g:each>
                     <li class="linemenu"></li>
                     </ul>
