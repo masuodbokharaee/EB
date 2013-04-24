@@ -91,8 +91,8 @@ body {
     background: url("../images/navBg-rtl.png") no-repeat scroll center top / 90% auto transparent ;
     width:170px;
     float:right;
-    padding-top:40px;
-    padding-bottom: 40px;
+    margin-top:40px;
+    margin-bottom: 40px;
     height:100%;
     direction: rtl;
 
@@ -102,6 +102,10 @@ body {
     position:relative;
     margin-top: 1px;
 
+}
+.menu li.selectedsubmenu a{
+    display: block;
+    padding: 0 26px;
 }
 
 .menu a {
@@ -149,7 +153,6 @@ body {
 }
 .ctg {
     color: #2c5f00;
-    padding-right: 20px;
 }
 .linemenu {
     height: 1px;
@@ -337,7 +340,7 @@ img {
 }
   */
 .nav a:focus, .nav a:hover {
-    background-color: rgba(113, 134, 228, 0.47) transparent;
+    background-color: rgba(113, 134, 228, 0.47);
 	color: #ffffff;
 	outline: none;
 	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
