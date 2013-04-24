@@ -7,9 +7,9 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<title><g:layoutTitle default="Grails"/></title>
+		<title><g:message code="fanavaran.e.ofoghe.aaghah" /></title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="shortcut icon" href="${resource(dir: 'images', file: 'favicon.ico')}" type="image/x-icon">
+		<link rel="icon" href="${resource(dir: 'images', file: 'favicon.ico')}" type="image/x-icon">
 		<link rel="apple-touch-icon" href="${resource(dir: 'images', file: 'apple-touch-icon.png')}">
 		<link rel="apple-touch-icon" sizes="114x114" href="${resource(dir: 'images', file: 'apple-touch-icon-retina.png')}">
 		<link rel="stylesheet" href="${resource(dir: 'css', file: 'main.css')}" type="text/css">
@@ -26,7 +26,7 @@
 
 		<div id="grailsLogo" role="banner"><img src="${resource(dir: 'images', file: "agah_72.png")}" width="50px" height="50px"/>
             <a href=""><span id="tlogo"><g:message code="fanavaran.e.ofoghe.aaghah" /></span></a>
-            <img class="leftop" src="${resource(dir: 'images/skin', file: "log1.png")}" width="15px" height="15px"/>
+            <img class="leftop" src="${resource(dir: 'images/skin', file: "log1.png")}" width="20px" height="20px"/>
             <g:link class="leftop"><g:message code="name" /></g:link>
             <g:link class="leftop"><g:message code="contact" /><span class="lineheadmenu"/></g:link>
             <g:link class="leftop"><g:message code="setting" /><span class="lineheadmenu"/></g:link>
