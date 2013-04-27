@@ -6,7 +6,7 @@
 <!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"><!--<![endif]-->
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
 		<title><g:message code="fanavaran.e.ofoghe.aaghah" /></title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="icon" href="${resource(dir: 'images', file: 'favicon.ico')}" type="image/x-icon">
@@ -15,6 +15,7 @@
 		<link rel="stylesheet" href="${resource(dir: 'css', file: 'main.css')}" type="text/css">
 		<link rel="stylesheet" href="${resource(dir: 'css', file: 'mobile.css')}" type="text/css">
     <link rel="stylesheet" href="${resource(dir: 'css', file: 'bootstrap.css')}" type="text/css">
+
     <script src="${resource(dir: 'js', file: 'jquery.js')}"></script>
     <g:javascript library="jquery"/>
         <g:layoutHead/>
@@ -30,8 +31,9 @@
             <g:link class="leftop"><g:message code="name" /></g:link>
             <g:link class="leftop"><g:message code="contact" /><span class="lineheadmenu"/></g:link>
             <g:link class="leftop"><g:message code="setting" /><span class="lineheadmenu"/></g:link>
-            <span class="lineheadbot"/>
+
         </div>
+   <div><span class="lineheadbot"/></div>
     <div class="menu" >
         <g:set var="menu" value="[house
                 :['housese'],account:['accountsSummary','monthlyCalendar','statement','internetTransaction'],fundsTransfer:['internal','schedule','bulk','card','paya','satna'],services:['changePassword']]"/>
@@ -66,15 +68,6 @@
 
 		<r:layoutResources />
 
-    <script type="text/javascript" src="${resource(dir: 'js', file: 'jquery.js')}">
-        $(function() {
-            $('.s1').click(function(){
-                if($('.hide').css('display')=='none')
-                    $('.hide').slideDown();
-                else
-                    $('.hide').slideUp();
-            })
-        });
-        </script>
+
 	</body>
 </html>
