@@ -26,7 +26,7 @@
 
 		<div id="grailsLogo" role="banner"><img src="${resource(dir: 'images', file: "agah_72.png")}" width="50px" height="50px"/>
             <a href=""><span id="tlogo"><g:message code="fanavaran.e.ofoghe.aaghah" /></span></a>
-            <img class="leftop" src="${resource(dir: 'images/skin', file: "log1.png")}" width="20px" height="20px"/>
+            <img class="leftlog" title="log.in.out" src="${resource(dir: 'images/skin', file: "log1.png")}" width="20px" height="20px"/>
             <g:link class="leftop"><g:message code="name" /></g:link>
             <g:link class="leftop"><g:message code="contact" /><span class="lineheadmenu"/></g:link>
             <g:link class="leftop"><g:message code="setting" /><span class="lineheadmenu"/></g:link>

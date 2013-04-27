@@ -93,7 +93,14 @@ body {
     margin-top: 2px;
     font-size: 10px;
 }
-
+.leftlog{
+    direction: ltr;
+    float: left;
+    margin-left: 10px;
+    text-align: center;
+    margin-top: 2px;
+    cursor: pointer;
+}
 .menu{
     background: url("../images/navBg-rtl.png") no-repeat scroll center top / 90% auto transparent ;
     width:170px;
