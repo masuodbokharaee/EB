@@ -20,13 +20,17 @@
         <span class="paneldetail"><g:message code="fundsTransfer.info" /></span>
     </div>
     <div class=panelinfo>
-        <g:link class="paneltext" controller="fundsTransfer" action="index"><g:message code="fundsTransfer" /></g:link>
+        <g:link class="paneltext" controller="fundsTransfer" action="payments"><g:message code="payments" /></g:link>
         <span class="panelinfoline"></span>
-        <span class="paneldetail"><g:message code="fundsTransfer.info" /></span>
+        <span class="paneldetail"><g:message code="payments.info" /></span>
     </div>
     <div class="houseinfo">
     <span class="hinfotext"><g:message code="start" /></span>
-
+        <ul>
+            <li class="houselist"><g:message code="hinfo1" /></li>
+            <li class="houselist"><g:message code="hinfo2" /></li>
+        </ul>
+        <span class="houselist"><g:message code="hinfo3" /></span>
     </div>
 
 	</body>

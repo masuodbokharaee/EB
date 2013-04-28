@@ -35,7 +35,7 @@
         </div>
    <div><span class="lineheadbot"></span></div>
     <div class="menu" >
-        <g:set var="menu" value="[account:['accountsSummary','monthlyCalendar','statement','internetTransaction'],fundsTransfer:['internal','schedule','bulk','card','paya','satna'],services:['changePassword']]"/>
+        <g:set var="menu" value="[account:['accountsSummary','monthlyCalendar','statement','internetTransaction'],fundsTransfer:['internal','schedule','bulk','card','payments','paya','satna'],services:['changePassword']]"/>
         <ul class="nav nav-list">
             <g:set var="isInHouse" value="${false}"/>
             <g:if test="${!params.controller}">

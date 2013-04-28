@@ -6,6 +6,8 @@ class FundsTransferController {
 
     def internal() {}
 
+    def payments() {}
+
     def schedule() {}
 
     def bulk() {}

@@ -244,7 +244,8 @@ body {
 
 .houseinfo {
     display: block;
-    margin: 50px;
+    margin-right: 135px;
+    margin-top: 30px;
     float: right;
 }
 
@@ -253,7 +254,13 @@ body {
     display: block;
     font-weight: bold;
     color: gray;
+    margin-bottom: 10px;
+}
 
+.houselist{
+    padding-top: 8px;
+    font-size: 10px;
+    color: #686868
 }
 
 /* replace with .no-boxshadow body if you have modernizr available */
