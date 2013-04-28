@@ -29,11 +29,11 @@
             <a href=""><span id="tlogo"><g:message code="fanavaran.e.ofoghe.aaghah" /></span></a>
             <img class="leftlog" title="<g:message code="log.in.out" />" src="${resource(dir: 'images/skin', file: "log1.png")}" width="20px" height="20px"/>
             <g:link class="leftop"><g:message code="name" /></g:link>
-            <g:link class="leftop"><g:message code="contact" /><span class="lineheadmenu"/></g:link>
-            <g:link class="leftop"><g:message code="setting" /><span class="lineheadmenu"/></g:link>
+            <g:link class="leftop "><g:message code="contact" /><span class="lineheadmenu"></span></g:link>
+            <g:link class="leftop"><g:message code="setting" /><span class="lineheadmenu"></span></g:link>
 
         </div>
-   <div><span class="lineheadbot"/></div>
+   <div><span class="lineheadbot"></span></div>
     <div class="menu" >
         <g:set var="menu" value="[account:['accountsSummary','monthlyCalendar','statement','internetTransaction'],fundsTransfer:['internal','schedule','bulk','card','paya','satna'],services:['changePassword']]"/>
         <ul class="nav nav-list">
