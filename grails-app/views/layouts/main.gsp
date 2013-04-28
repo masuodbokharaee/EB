@@ -35,9 +35,18 @@
         </div>
    <div><span class="lineheadbot"/></div>
     <div class="menu" >
-        <g:set var="menu" value="[house
-                :['housese'],account:['accountsSummary','monthlyCalendar','statement','internetTransaction'],fundsTransfer:['internal','schedule','bulk','card','paya','satna'],services:['changePassword']]"/>
+        <g:set var="menu" value="[account:['accountsSummary','monthlyCalendar','statement','internetTransaction'],fundsTransfer:['internal','schedule','bulk','card','paya','satna'],services:['changePassword']]"/>
         <ul class="nav nav-list">
+            <g:set var="isInHouse" value="${false}"/>
+            <g:if test="${!params.controller}">
+                <g:set var="isInHouse" value="${true}"/>
+            </g:if>
+            <li class="${isInHouse?"selected":""}" >
+                <a href="<g:createLink uri="/"/>" title="<g:message code="house" />">
+                    <img src="${resource(dir: 'images/skin', file: "house.png")}"  width="27px" height="27px" />
+                    <g:message code="house" />
+                </a>
+            </li>
             <g:each in="${menu}" var="menuItem">
                 <g:set var="selectedMenuItemClass" value="${menuItem.key==params.controller?'selected':''}"/>
                 <li class="${selectedMenuItemClass}" >
