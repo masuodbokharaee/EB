@@ -271,11 +271,11 @@ body {
     margin-top:20px;
     margin-right: 25px;
     float:right;
-    -webkit-transition: all 0.8s ease;
-    -moz-transition: all 0.8s ease;
-    -ms-transition: all 0.8s ease;
-    -o-transition: all 0.8s ease;
-    transition: all 0.8s ease;
+    -webkit-transition: all 0.9s ease;
+    -moz-transition: all 0.9s ease;
+    -ms-transition: all 0.9s ease;
+    -o-transition: all 0.9s ease;
+    transition: all 0.9s ease;
 }
 
 .accindex:hover {
@@ -286,10 +286,7 @@ body {
     background-image: -webkit-radial-gradient(center, ellipse farthest-side, rgba(255, 220, 229, 0.40) 0%, rgba(255, 255, 255, 0.31) 100%);
     background-image: radial-gradient(ellipse farthest-side at center, rgba(255, 220, 229, 0.40) 0%, rgba(255, 255, 255, 0.31) 100%);
     box-shadow: 1px 1px 1px 2px black inset;
-    -moz-border-radius: 9px 3px 9px 3px;
-    -webkit-border-radius: 3px;
-    -webkit-border-top-left-radius: 50px;
-    -webkit-border-bottom-right-radius: 35px;
+    border-radius: 50px 3px 35px 3px;
 }
 
 /* replace with .no-boxshadow body if you have modernizr available */
