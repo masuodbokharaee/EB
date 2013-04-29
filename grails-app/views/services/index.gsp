@@ -8,5 +8,9 @@
     <g:message code="services.index" />
 <p class="linehead"></p>
 </div>
+<div class=accindex>
+    <g:link class="paneltext" controller="services" action="changePassword"><g:message code="changePassword" /></g:link>
+    <span class="paneldetail"><g:message code="changePassword.info" /></span>
+</div>
 </body>
 </html>
