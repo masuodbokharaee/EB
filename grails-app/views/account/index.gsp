@@ -15,7 +15,7 @@
 </div>
 <div class=accindex>
     <g:link class="paneltext" controller="account" action="monthlyCalendar"><g:message code="monthly.calendar" /></g:link>
-    <span class="paneldetail"><g:message code="statment.info" /></span>
+    <span class="paneldetail"><g:message code="monthlyCalendar.info" /></span>
 </div>
 <div class=accindex>
     <g:link class="paneltext" controller="account" action="statement"><g:message code="statement" /></g:link>
@@ -23,7 +23,7 @@
 </div>
 <div class=accindex>
     <g:link class="paneltext" controller="account" action="internetTransaction"><g:message code="internetTransaction" /></g:link>
-    <span class="paneldetail"><g:message code="statment.info" /></span>
+    <span class="paneldetail"><g:message code="internetTransaction.info" /></span>
 </div>
 </body>
 </html>
