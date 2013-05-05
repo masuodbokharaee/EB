@@ -7,6 +7,8 @@
 		margin: 15px 0px;
 		padding: 0px;
 		text-align: center;
+        width: 950px;
+        height: auto;
 	}
 
 	#login .inner {
@@ -35,18 +37,15 @@
 		clear: left;
 		margin: 0;
 		padding: 4px 0 3px 0;
-		padding-left: 105px;
-		margin-bottom: 20px;
+		padding-left: 70px;
 		height: 1%;
 	}
 
 	#login .inner .cssform input[type='text'] {
-		width: 120px;
+		width: 240px;
 	}
 
 	#login .inner .cssform label {
-		font-weight: bold;
-		float: left;
 		text-align: right;
 		margin-left: -105px;
 		width: 110px;
@@ -59,8 +58,33 @@
 	}
 
 	#login #submit {
-		margin-left: 15px;
+        display: block;
+        font: bolder 15px tahoma;
+        text-decoration: none;
+        width: 120px;
+        text-align: center;
+        border-top-left-radius: 30px 50px;
+        border-bottom-left-radius: 30px 50px;
+        border-top-right-radius: 30px 50px;
+        border-bottom-right-radius: 30px 50px;
+        -moz-border-radius-topleft: 30px 50px;
+        -moz-border-radius-topright: 30px 50px;
+        -moz-border-radius-bottomright: 30px 50px;
+        -moz-border-radius-bottomleft: 30px 50px;
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -ms-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+        color: #ffffff;
+       background-color: #00008b;
+        text-shadow: 1px 1px 6px rgba(235, 255, 0, 0.36);
+        margin-right: 15px;
+        padding-bottom: 10px;
 	}
+    #login #submit:hover{
+        border-radius: 5px 5px 5px 5px;
+    }
 
 	#login #remember_me_holder label {
 		float: none;
@@ -69,13 +93,26 @@
 		width: 200px
 	}
 
-	#login .inner .login_message {
-		padding: 6px 25px 20px 25px;
-		color: #c33;
+	#login .login_message {
+        list-style: none;
+        font-size: 12px;
+        color: #F00;
+        line-height: 150%;
+        text-align: right;
+        background: #F4F4F4 url(../images/error-bg.png) no-repeat 0 0  ;
+        width: 96%;
+        min-height: 37px;
+        border: 2px solid #D7D7D7;
+        padding: 10px 2%;
+        margin: 10px 0;
 	}
 
+    #login .login_message input.error {
+        background-color: #ffc0cb;
+    }
+
 	#login .inner .text_ {
-		width: 120px;
+		width: 240px;
 	}
 
 	#login .inner .chk {
@@ -86,31 +123,28 @@
 
 <body>
 <div id='login'>
+    <g:if test='${flash.message}'>
+        <div class='login_message'><g:message code="error.login.message"/></div>
+    </g:if>
 	<div class='inner'>
-		<div class='fheader'><g:message code="springSecurity.login.header"/></div>
 
-		<g:if test='${flash.message}'>
-			<div class='login_message'>${flash.message}</div>
-		</g:if>
+
 
 		<form action='${postUrl}' method='POST' id='loginForm' class='cssform' autocomplete='off'>
 			<p>
 				<label for='username'><g:message code="springSecurity.login.username.label"/>:</label>
-				<input type='text' class='text_' name='j_username' id='username'/>
+				<input type='text' class='text_' name='j_username' id='username' title="<g:message code="username.pass.title"/>"/>
 			</p>
 
 			<p>
 				<label for='password'><g:message code="springSecurity.login.password.label"/>:</label>
-				<input type='password' class='text_' name='j_password' id='password'/>
+				<input type='password' class='text_' name='j_password' id='password' title="<g:message code="username.pass.title"/>"/>
 			</p>
 
-			<p id="remember_me_holder">
-				<input type='checkbox' class='chk' name='${rememberMeParameter}' id='remember_me' <g:if test='${hasCookie}'>checked='checked'</g:if>/>
-				<label for='remember_me'><g:message code="springSecurity.login.remember.me.label"/></label>
-			</p>
+
 
 			<p>
-				<input type='submit' id="submit" value='${message(code: "springSecurity.login.button")}'/>
+				<input type='submit' id="submit" title="<g:message code="springSecurity.login.button"/>" value='${message(code: "springSecurity.login.button")}'/>
 			</p>
 		</form>
 	</div>
