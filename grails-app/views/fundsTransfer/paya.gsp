@@ -10,6 +10,7 @@
 </div>
 <div class="photopage">
     <img src="${resource(dir: 'images/page', file: "paya.png")}" >
+    <p class="phodetail"><g:message code="paya.details"/></p>
 </div>
 </body>
 </html>

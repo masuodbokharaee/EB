@@ -11,6 +11,7 @@
 </div>
 <div class="photopage">
     <img src="${resource(dir: 'images/page', file: "monthlyCalendar.png")}" >
+    <p class="phodetail"><g:message code="monthly.calendar.details"/></p>
 </div>
 </body>
 </html>

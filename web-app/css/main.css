@@ -315,6 +315,13 @@ body {
     width: 800px;
     margin-right: 15px;
 }
+.phodetail{
+    color: green;
+    font-size: 15px;
+    font-weight: bold;
+    margin-right: 200px;
+    margin-top: 15px;
+}
 
 
 /* replace with .no-boxshadow body if you have modernizr available */

@@ -10,6 +10,7 @@
 </div>
 <div class="photopage">
     <img src="${resource(dir: 'images/page', file: "satna.png")}" >
+    <p class="phodetail"><g:message code="satna.details"/></p>
 </div>
 </body>
 </html>

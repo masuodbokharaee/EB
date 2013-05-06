@@ -11,7 +11,9 @@
 </div>
 <div class="photopage">
     <img src="${resource(dir: 'images/page', file: "acoe.png")}" >
+    <p class="phodetail"><g:message code="acct.summary.details"/></p>
 </div>
+
 
 </body>
 </html>

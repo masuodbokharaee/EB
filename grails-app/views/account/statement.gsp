@@ -11,6 +11,7 @@
 </div>
 <div class="photopage">
     <img src="${resource(dir: 'images/page', file: "statement.png")}" >
+    <p class="phodetail"><g:message code="statement.details"/></p>
 </div>
 </body>
 </html>

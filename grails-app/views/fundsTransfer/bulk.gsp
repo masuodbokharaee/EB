@@ -10,6 +10,7 @@
 </div>
 <div class="photopage">
     <img src="${resource(dir: 'images/page', file: "bulk.png")}" >
+    <p class="phodetail"><g:message code="transfer.bulk.details"/></p>
 </div>
 </body>
 </html>

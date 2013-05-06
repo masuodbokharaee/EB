@@ -10,6 +10,7 @@
 </div>
 <div class="photopage">
     <img src="${resource(dir: 'images/page', file: "card.png")}" >
+    <p class="phodetail"><g:message code="transfer.card.details"/></p>
 </div>
 </body>
 </html>
