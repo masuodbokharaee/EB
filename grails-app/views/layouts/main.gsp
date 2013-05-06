@@ -27,13 +27,19 @@
 
 		<div id="grailsLogo" role="banner"><img src="${resource(dir: 'images', file: "agah_72.png")}" width="50px" height="50px"/>
             <a href=""><span id="tlogo"><g:message code="fanavaran.e.ofoghe.aaghah" /></span></a>
-            <img class="leftlog" title="<g:message code="log.in.out" />" src="${resource(dir: 'images/skin', file: "log1.png")}" width="20px" height="20px"/>
+            <sec:ifLoggedIn>
+                <g:link controller="logout">
+                    <img class="leftlog" title="<g:message code="log.in.out"/>"
+                         src="${resource(dir: 'images/skin', file:
+                                 "log1.png")}" width="20px" height="20px"/>
+                </g:link>
             <g:link class="leftop"><g:message code="name" /></g:link>
             <g:link class="leftop "><g:message code="contact" /><span class="lineheadmenu"></span></g:link>
             <g:link class="leftop"><g:message code="setting" /><span class="lineheadmenu"></span></g:link>
-
+            </sec:ifLoggedIn>
         </div>
    <div><span class="lineheadbot"></span></div>
+<sec:ifLoggedIn>
     <div class="menu" >
         <g:set var="menu" value="[account:['accountsSummary','monthlyCalendar','statement','internetTransaction'],fundsTransfer:['internal','schedule','bulk','card','payments','paya','satna'],services:['changePassword']]"/>
         <ul class="nav nav-list">
@@ -68,10 +74,11 @@
         </ul>
 
     </div>
-
+</sec:ifLoggedIn>
     <g:layoutBody/>
-
+<sec:ifLoggedIn>
 		<div class="footer" role="contentinfo"></div>
+</sec:ifLoggedIn>
 		<div id="spinner" class="spinner" style="display:none;"><g:message code="spinner.alt" default="Loading&hellip;"/></div>
 		<g:javascript library="application"/>
 

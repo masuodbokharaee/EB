@@ -4,24 +4,22 @@
 	<title><g:message code="springSecurity.login.title"/></title>
 	<style type='text/css' media='screen'>
 	#login {
-		margin: 15px 0px;
-		padding: 0px;
-		text-align: center;
-        width: 950px;
+        margin: 0 auto;
         height: auto;
+        width: 100%;
+        padding: 20px 0 20px 0;
+        background-color: #F7F7F7;
+       /* border-top: 1px solid #CCC;*/
+        border-bottom: 2px solid #CCC;
+        overflow: hidden;
 	}
 
 	#login .inner {
-		width: 340px;
-		padding-bottom: 6px;
-		margin: 60px auto;
-		text-align: left;
-		border: 1px solid #aab;
-		background-color: #f0f0fa;
-		-moz-box-shadow: 2px 2px 2px #eee;
-		-webkit-box-shadow: 2px 2px 2px #eee;
-		-khtml-box-shadow: 2px 2px 2px #eee;
-		box-shadow: 2px 2px 2px #eee;
+        width: 260px;
+        height: auto;
+        margin-bottom: 10px;
+        padding-top: 20px;
+        float:right;
 	}
 
 	#login .inner .fheader {
@@ -34,11 +32,9 @@
 	}
 
 	#login .inner .cssform p {
-		clear: left;
 		margin: 0;
-		padding: 4px 0 3px 0;
-		padding-left: 70px;
-		height: 1%;
+        padding-right: 10px;
+        float: right;
 	}
 
 	#login .inner .cssform input[type='text'] {
@@ -50,7 +46,7 @@
 		margin-left: -105px;
 		width: 110px;
 		padding-top: 3px;
-		padding-right: 10px;
+		padding-right: 6px;
 	}
 
 	#login #remember_me_holder {
@@ -79,7 +75,6 @@
         color: #ffffff;
        background-color: #00008b;
         text-shadow: 1px 1px 6px rgba(235, 255, 0, 0.36);
-        margin-right: 15px;
         padding-bottom: 10px;
 	}
     #login #submit:hover{
@@ -118,36 +113,81 @@
 	#login .inner .chk {
 		height: 12px;
 	}
+    #warloghead{
+        color: #228722;
+        font-weight: bolder;
+        font-size: 20px;
+        font-family: bnazanin;
+    }
+    #warloghead img {
+        margin-left: 10px;
+        margin-bottom: 3px;
+    }
+    #logpagtext{
+        margin-bottom: 8px;
+        margin-right: 30px;
+        margin-left: 15px;
+    }
+    #logpagtext img {
+        margin-left: 9px;
+    }
 	</style>
 </head>
 
 <body>
 <div id='login'>
+  <div class=fixpage>
     <g:if test='${flash.message}'>
         <div class='login_message'><g:message code="error.login.message"/></div>
     </g:if>
 	<div class='inner'>
-
-
-
 		<form action='${postUrl}' method='POST' id='loginForm' class='cssform' autocomplete='off'>
 			<p>
 				<label for='username'><g:message code="springSecurity.login.username.label"/>:</label>
 				<input type='text' class='text_' name='j_username' id='username' title="<g:message code="username.pass.title"/>"/>
 			</p>
-
 			<p>
 				<label for='password'><g:message code="springSecurity.login.password.label"/>:</label>
 				<input type='password' class='text_' name='j_password' id='password' title="<g:message code="username.pass.title"/>"/>
 			</p>
-
-
-
 			<p>
 				<input type='submit' id="submit" title="<g:message code="springSecurity.login.button"/>" value='${message(code: "springSecurity.login.button")}'/>
 			</p>
 		</form>
 	</div>
+    <div class="loginfopage">
+       <div class="logpagehead">
+           <p id="warloghead"><img src="${resource(dir: 'images/skin', file:"warning.png")}" align="absmiddle"><g:message code="warning.log"/></p>
+       </div>
+       <div id="logpagtext">
+      <img src="${resource(dir: 'images/skin', file:"wireless.png")}" align="absmiddle"><g:message code="warning.wireless"/>
+       </div>
+        <div id="logpagtext">
+            <img src="${resource(dir: 'images/skin', file:"globe.png")}" align="absmiddle"><g:message code="warning.globe"/>
+        </div>
+        <div id="logpagtext">
+            <img src="${resource(dir: 'images/skin', file:"security.png")}" align="absmiddle"><g:message code="warning.security"/>
+        </div>
+        <div id="logpagtext">
+            <img src="${resource(dir: 'images/skin', file:"search.png")}" align="absmiddle"><g:message code="warning.search"/>
+        </div>
+        <div id="logpagtext">
+            <img src="${resource(dir: 'images/skin', file:"laptop.png")}" align="absmiddle"><g:message code="warning.laptop"/>
+        </div>
+        <div id="logpagtext">
+            <img src="${resource(dir: 'images/skin', file:"lock.png")}" align="absmiddle"><g:message code="warning.lock"/>
+        </div>
+        <div id="logpagtext">
+            <img src="${resource(dir: 'images/skin', file:"keyboard.png")}" align="absmiddle"><g:message code="warning.keyboard"/>
+        </div>
+        <div id="logpagtext">
+            <img src="${resource(dir: 'images/skin', file:"log1.png")}" align="absmiddle"><g:message code="warning.log1"/>
+        </div>
+        <div id="logpagtext">
+            <img src="${resource(dir: 'images/skin', file:"mail.png")}" align="absmiddle"><span><g:message code="warning.mail"/></span>
+        </div>
+    </div>
+  </div>
 </div>
 <script type='text/javascript'>
 	<!--
