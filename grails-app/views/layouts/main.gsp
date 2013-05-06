@@ -35,7 +35,7 @@
                 </g:link>
             <g:link class="leftop"><g:message code="name" /></g:link>
             <g:link class="leftop "><g:message code="contact" /><span class="lineheadmenu"></span></g:link>
-            <g:link class="leftop"><g:message code="setting" /><span class="lineheadmenu"></span></g:link>
+            <g:link controller="services" action="changePassword" class="leftop"><g:message code="setting" /><span class="lineheadmenu"></span></g:link>
             </sec:ifLoggedIn>
         </div>
    <div><span class="lineheadbot"></span></div>
