@@ -8,5 +8,8 @@
 <g:message code="transfer.internal" />
     <p class="linehead"></p>
 </div>
+<div class="photopage">
+    <img src="${resource(dir: 'images/page', file: "normal.png")}" >
+</div>
 </body>
 </html>

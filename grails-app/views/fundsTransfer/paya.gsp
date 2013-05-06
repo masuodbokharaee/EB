@@ -8,5 +8,8 @@
 <g:message code="paya" />
 <p class="linehead"></p>
 </div>
+<div class="photopage">
+    <img src="${resource(dir: 'images/page', file: "paya.png")}" >
+</div>
 </body>
 </html>

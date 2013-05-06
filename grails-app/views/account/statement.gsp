@@ -9,5 +9,8 @@
 <g:message code="statement" />
     <p class="linehead"></p>
 </div>
+<div class="photopage">
+    <img src="${resource(dir: 'images/page', file: "statement.png")}" >
+</div>
 </body>
 </html>

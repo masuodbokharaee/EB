@@ -310,6 +310,11 @@ body {
 .logpagehead {
     margin-bottom: 30px;
 }
+.photopage img{
+    height: auto;
+    width: 800px;
+    margin-right: 15px;
+}
 
 
 /* replace with .no-boxshadow body if you have modernizr available */

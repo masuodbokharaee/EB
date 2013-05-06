@@ -8,5 +8,8 @@
 <g:message code="satna" />
     <p class="linehead"></p>
 </div>
+<div class="photopage">
+    <img src="${resource(dir: 'images/page', file: "satna.png")}" >
+</div>
 </body>
 </html>

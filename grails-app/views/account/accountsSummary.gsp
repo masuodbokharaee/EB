@@ -9,6 +9,9 @@
     <g:message code="acct.summary" />
     <p class="linehead"></p>
 </div>
+<div class="photopage">
+    <img src="${resource(dir: 'images/page', file: "acoe.png")}" >
+</div>
 
 </body>
 </html>

@@ -9,6 +9,8 @@
 <g:message code="monthly.calendar" />
 <p class="linehead"></p>
 </div>
-
+<div class="photopage">
+    <img src="${resource(dir: 'images/page', file: "monthlyCalendar.png")}" >
+</div>
 </body>
 </html>

@@ -8,6 +8,8 @@
 <g:message code="transfer.card" />
     <p class="linehead"></p>
 </div>
-
+<div class="photopage">
+    <img src="${resource(dir: 'images/page', file: "card.png")}" >
+</div>
 </body>
 </html>
